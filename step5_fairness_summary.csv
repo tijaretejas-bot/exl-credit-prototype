@@ -1,0 +1,6 @@
+Comparison,Baseline: approval ratio,Baseline: good-borrower ratio,New scorecard: approval ratio,New scorecard: good-borrower ratio
+Women ÷ men,0.91 PASS,0.90 PASS,1.08 PASS,1.07 PASS
+Rural ÷ urban,0.89 PASS,0.88 PASS,1.01 PASS,1.01 PASS
+Rural women ÷ urban men,0.86 PASS,0.84 PASS,1.07 PASS,1.06 PASS
+Thin-file ÷ thick-file,0.62 FAIL,0.61 FAIL,1.15 PASS,1.12 PASS
+Underbanked ÷ banked,0.74 FAIL,0.74 FAIL,1.09 PASS,1.09 PASS

@@ -1,0 +1,23 @@
+variable,band,applicants,default_rate,points,column
+Bureau score,"(-inf, 600.0]",334,0.272,78,bureau_score
+Bureau score,"(600.0, 650.0]",744,0.144,97,bureau_score
+Bureau score,"(650.0, 700.0]",1231,0.098,107,bureau_score
+Bureau score,"(700.0, 750.0]",1427,0.048,125,bureau_score
+Bureau score,"(750.0, 800.0]",890,0.035,133,bureau_score
+Bureau score,"(800.0, inf]",536,0.017,149,bureau_score
+Worst DPD (12m),"(-inf, 0.0]",3895,0.057,114,bureau_max_dpd_12m
+Worst DPD (12m),"(0.0, 30.0]",506,0.119,108,bureau_max_dpd_12m
+Worst DPD (12m),"(30.0, 60.0]",371,0.143,107,bureau_max_dpd_12m
+Worst DPD (12m),"(60.0, inf]",390,0.236,102,bureau_max_dpd_12m
+Credit enquiries (6m),"(-inf, 0.0]",2901,0.071,115,bureau_enquiries_6m
+Credit enquiries (6m),"(0.0, 1.0]",1451,0.097,107,bureau_enquiries_6m
+Credit enquiries (6m),"(1.0, 2.0]",541,0.087,110,bureau_enquiries_6m
+Credit enquiries (6m),"(2.0, inf]",269,0.126,100,bureau_enquiries_6m
+Active loans,"(-inf, 0.0]",1653,0.071,111,bureau_active_loans
+Active loans,"(0.0, 1.0]",2089,0.075,111,bureau_active_loans
+Active loans,"(1.0, 2.0]",895,0.093,111,bureau_active_loans
+Active loans,"(2.0, inf]",525,0.137,111,bureau_active_loans
+FOIR (EMI / declared income),"(-inf, 0.2]",1525,0.056,122,foir_declared
+FOIR (EMI / declared income),"(0.2, 0.3]",2071,0.076,114,foir_declared
+FOIR (EMI / declared income),"(0.3, 0.4]",1083,0.106,104,foir_declared
+FOIR (EMI / declared income),"(0.4, inf]",483,0.143,96,foir_declared

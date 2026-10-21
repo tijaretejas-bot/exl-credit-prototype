@@ -1,0 +1,279 @@
+{
+ "new": {
+  "cut": 534,
+  "cut_thin_file": 550,
+  "neutral_points": 34.94228116101454,
+  "pdo": 20,
+  "base": 600,
+  "odds": 50,
+  "keep": [
+   "bureau_score",
+   "bureau_max_dpd_12m",
+   "bureau_enquiries_6m",
+   "foir_declared",
+   "emi_to_lean_surplus",
+   "emi_to_avg_surplus",
+   "inflow_cv_12m",
+   "lean_3m_inflow_ratio",
+   "bounce_rate_12m",
+   "avg_eom_balance_months",
+   "utility_bill_ontime_rate",
+   "mobile_recharge_regularity",
+   "udhaar_ontime_rate",
+   "shg_attendance_rate",
+   "shg_savings_months",
+   "drought_exposure"
+  ],
+  "vars": {
+   "bureau_score": {
+    "label": "Bureau score",
+    "cuts": [
+     null,
+     600.0,
+     650.0,
+     700.0,
+     750.0,
+     800.0,
+     null
+    ],
+    "missing": "No bureau file",
+    "reason": "Low bureau score"
+   },
+   "bureau_max_dpd_12m": {
+    "label": "Worst DPD on bureau (12m)",
+    "cuts": [
+     null,
+     0.0,
+     30.0,
+     60.0,
+     null
+    ],
+    "missing": "No bureau file",
+    "reason": "Past delays on formal loans"
+   },
+   "bureau_enquiries_6m": {
+    "label": "Credit enquiries (6m)",
+    "cuts": [
+     null,
+     0.0,
+     1.0,
+     2.0,
+     null
+    ],
+    "missing": "No bureau file",
+    "reason": "Many recent credit enquiries"
+   },
+   "foir_declared": {
+    "label": "FOIR (EMI / declared income)",
+    "cuts": [
+     null,
+     0.2,
+     0.3,
+     0.4,
+     null
+    ],
+    "missing": null,
+    "reason": "High EMI burden vs declared income"
+   },
+   "emi_to_lean_surplus": {
+    "label": "EMI / lean-month surplus",
+    "cuts": [
+     null,
+     0.75,
+     1.5,
+     3.0,
+     6.0,
+     null
+    ],
+    "missing": null,
+    "reason": "EMI exceeds lean-month surplus"
+   },
+   "emi_to_avg_surplus": {
+    "label": "EMI / average monthly surplus",
+    "cuts": [
+     null,
+     0.4,
+     0.55,
+     0.75,
+     1.0,
+     null
+    ],
+    "missing": null,
+    "reason": "EMI too high vs average surplus"
+   },
+   "inflow_cv_12m": {
+    "label": "Income volatility (bank/UPI)",
+    "cuts": [
+     null,
+     0.13,
+     0.16,
+     0.2,
+     0.3,
+     null
+    ],
+    "missing": "No digital footprint",
+    "reason": "Unstable or seasonal income"
+   },
+   "lean_3m_inflow_ratio": {
+    "label": "Lean-season income ratio",
+    "cuts": [
+     null,
+     0.7,
+     0.8,
+     0.85,
+     0.9,
+     null
+    ],
+    "missing": "No digital footprint",
+    "reason": "Income drops sharply in lean months"
+   },
+   "bounce_rate_12m": {
+    "label": "Payment bounce rate",
+    "cuts": [
+     null,
+     0.025,
+     0.04,
+     0.06,
+     0.08,
+     null
+    ],
+    "missing": "No digital footprint",
+    "reason": "Bounced payments in bank account"
+   },
+   "avg_eom_balance_months": {
+    "label": "Savings buffer (months)",
+    "cuts": [
+     null,
+     0.25,
+     0.4,
+     0.6,
+     1.0,
+     null
+    ],
+    "missing": "No digital footprint",
+    "reason": "Thin savings buffer"
+   },
+   "utility_bill_ontime_rate": {
+    "label": "Electricity bills paid on time",
+    "cuts": [
+     null,
+     0.7,
+     0.82,
+     0.9,
+     0.95,
+     null
+    ],
+    "missing": "No utility data",
+    "reason": "Late electricity bill payments"
+   },
+   "mobile_recharge_regularity": {
+    "label": "Mobile recharge regularity",
+    "cuts": [
+     null,
+     0.7,
+     0.78,
+     0.84,
+     0.89,
+     null
+    ],
+    "missing": "No telecom data",
+    "reason": "Irregular mobile recharges"
+   },
+   "udhaar_ontime_rate": {
+    "label": "Udhaar Passport on-time rate",
+    "cuts": [
+     null,
+     0.65,
+     0.8,
+     0.9,
+     0.95,
+     null
+    ],
+    "missing": "No Udhaar Passport",
+    "reason": "Late repayments on informal credit"
+   },
+   "shg_attendance_rate": {
+    "label": "SHG meeting attendance",
+    "cuts": [
+     null,
+     0.7,
+     0.8,
+     0.87,
+     0.93,
+     null
+    ],
+    "missing": "Not an SHG member",
+    "reason": "Low SHG attendance"
+   },
+   "shg_savings_months": {
+    "label": "SHG savings (months)",
+    "cuts": [
+     null,
+     0.25,
+     0.45,
+     0.7,
+     1.2,
+     null
+    ],
+    "missing": "Not an SHG member",
+    "reason": "Low SHG savings"
+   },
+   "drought_exposure": {
+    "label": "Rainfall / drought exposure",
+    "cuts": null,
+    "missing": null,
+    "reason": "Farm income hit by drought (uninsured)"
+   }
+  }
+ },
+ "baseline": {
+  "cut": 544,
+  "vars": {
+   "bureau_score": [
+    null,
+    600,
+    650,
+    700,
+    750,
+    800,
+    null
+   ],
+   "bureau_max_dpd_12m": [
+    null,
+    0,
+    30,
+    60,
+    null
+   ],
+   "bureau_enquiries_6m": [
+    null,
+    0,
+    1,
+    2,
+    null
+   ],
+   "bureau_active_loans": [
+    null,
+    0,
+    1,
+    2,
+    null
+   ],
+   "foir_declared": [
+    null,
+    0.2,
+    0.3,
+    0.4,
+    null
+   ]
+  },
+  "labels": {
+   "bureau_score": "Bureau score",
+   "bureau_max_dpd_12m": "Worst DPD (12m)",
+   "bureau_enquiries_6m": "Credit enquiries (6m)",
+   "bureau_active_loans": "Active loans",
+   "foir_declared": "FOIR (EMI / declared income)"
+  }
+ },
+ "annual_rate": 0.24
+}

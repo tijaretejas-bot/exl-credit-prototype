@@ -1,0 +1,32 @@
+Problem statement,Measure,Traditional (bureau scorecard),Our model,What it means
+1. More predictive,"Gini, all applicants (0 = random, 1 = perfect)",0.28,0.50,Ranks risky vs safe borrowers far better
+1. More predictive,"KS, all applicants (0–100)",26.5,40.1,Bigger gap between good and bad borrowers
+1. More predictive,"Gini, thin-file",0.16,0.51,Biggest gains exactly where the bureau is blind
+1. More predictive,"Gini, rural",0.23,0.48,Biggest gains exactly where the bureau is blind
+1. More predictive,"Gini, underbanked",0.17,0.51,Biggest gains exactly where the bureau is blind
+1. More predictive,"Gini, no bureau file",cannot rank (all declined),0.51,Biggest gains exactly where the bureau is blind
+1. More predictive,Approval rate at the same default rate (5.8%),61.2%,81.5%,More people approved without taking more risk
+1. More predictive,Default rate of applicants only the bureau would approve,–,18.9%,Our model rejects 212 risky borrowers the bureau would have approved
+2. Fairer,Approval rate (recommended cut-offs),61.2%,79.6%,Wider access to credit
+2. Fairer,Default rate among approved,5.8%,5.5%,…with no extra risk
+2. Fairer,"Approval rate, thin-file",46.9%,80.8%,Thin-file borrowers no longer shut out
+2. Fairer,"Approval rate, rural women",57.0%,80.2%,The most excluded group gains most
+2. Fairer,Approval ratio Women ÷ men (80% rule),0.91 (pass),1.05 (pass),Pass = group approved at ≥ 80% of the best group's rate
+2. Fairer,Approval ratio Rural ÷ urban (80% rule),0.89 (pass),0.95 (pass),Pass = group approved at ≥ 80% of the best group's rate
+2. Fairer,Approval ratio Thin-file ÷ thick-file (80% rule),0.62 (FAIL),1.03 (pass),Pass = group approved at ≥ 80% of the best group's rate
+2. Fairer,Approval ratio Underbanked ÷ banked (80% rule),0.74 (FAIL),1.02 (pass),Pass = group approved at ≥ 80% of the best group's rate
+2. Fairer,Good (repaid) thin-file borrowers approved,47.8%,83.3%,Creditworthy people no longer turned away
+2. Fairer,"Good borrowers rejected by bureau, approved by our model",–,756,"61% women, 74% rural, 82% no bureau file"
+2. Fairer,Declines with plain-language reasons,Knock-out label only,100% (top 3 reasons + what would help),Meets RBI Fair Practices Code; no reason is ever gender or location
+2. Fairer,Declined applicants offered a smaller loan,0%,46.6%,Typical offer = 63% of the amount asked
+3. Catches early stress,AUC: predicting 30+ DPD in the next 3 months,0.59,0.74,Spots stress before it shows in repayments
+3. Catches early stress,Upcoming 30+ DPD cases among the riskiest 10% of loans,26.4%,42.0%,Collections effort goes where it matters
+3. Catches early stress,Red-flag accounts that hit 30+ DPD within 3 months,–,49.0%,Red = 5.5% of loans a month: a manageable visit list
+3. Catches early stress,Warning before the first 30+ DPD,none (reacts the month it happens),64% of defaulters flagged Red 1–3 months ahead,Time to restructure before default
+3. Catches early stress,"False ""income drop"" alarms on healthy farm borrowers",20.3%,1.2%,Seasonal income is not mistaken for stress
+4. Broader signals,Gini with: Bureau + application only,0.28 (no-file declined),0.33 (thin-file 0.22),
+4. Broader signals,Gini with: Field affordability (lean-month),,0.41 (thin-file 0.34),+0.076 Gini
+4. Broader signals,Gini with: Bank / UPI cash flows,,0.47 (thin-file 0.41),+0.058 Gini
+4. Broader signals,Gini with: Utility & mobile payments,,0.50 (thin-file 0.49),+0.035 Gini
+4. Broader signals,Gini with: Udhaar Passport & SHG,,0.51 (thin-file 0.51),+0.012 Gini
+4. Broader signals,Gini with: Rainfall / drought exposure,,0.52 (thin-file 0.52),+0.005 Gini

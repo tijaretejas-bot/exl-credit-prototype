@@ -1,0 +1,90 @@
+column,variable,band,applicants,default_rate,points
+bureau_score,Bureau score,"(-inf, 600.0]",334,0.272,14
+bureau_score,Bureau score,"(600.0, 650.0]",744,0.144,25
+bureau_score,Bureau score,"(650.0, 700.0]",1231,0.098,31
+bureau_score,Bureau score,"(700.0, 750.0]",1427,0.048,42
+bureau_score,Bureau score,"(750.0, 800.0]",890,0.035,47
+bureau_score,Bureau score,"(800.0, inf]",536,0.017,57
+bureau_score,Bureau score,No bureau file,1519,0.06,39
+bureau_max_dpd_12m,Worst DPD on bureau (12m),"(-inf, 0.0]",3895,0.057,35
+bureau_max_dpd_12m,Worst DPD on bureau (12m),"(0.0, 30.0]",506,0.119,34
+bureau_max_dpd_12m,Worst DPD on bureau (12m),"(30.0, 60.0]",371,0.143,34
+bureau_max_dpd_12m,Worst DPD on bureau (12m),"(60.0, inf]",390,0.236,33
+bureau_max_dpd_12m,Worst DPD on bureau (12m),No bureau file,1519,0.06,35
+bureau_enquiries_6m,Credit enquiries (6m),"(-inf, 0.0]",2901,0.071,36
+bureau_enquiries_6m,Credit enquiries (6m),"(0.0, 1.0]",1451,0.097,32
+bureau_enquiries_6m,Credit enquiries (6m),"(1.0, 2.0]",541,0.087,33
+bureau_enquiries_6m,Credit enquiries (6m),"(2.0, inf]",269,0.126,28
+bureau_enquiries_6m,Credit enquiries (6m),No bureau file,1519,0.06,38
+foir_declared,FOIR (EMI / declared income),"(-inf, 0.2]",2856,0.055,36
+foir_declared,FOIR (EMI / declared income),"(0.2, 0.3]",2258,0.079,35
+foir_declared,FOIR (EMI / declared income),"(0.3, 0.4]",1084,0.106,34
+foir_declared,FOIR (EMI / declared income),"(0.4, inf]",483,0.143,33
+emi_to_lean_surplus,EMI / lean-month surplus,"(-inf, 0.75]",961,0.036,43
+emi_to_lean_surplus,EMI / lean-month surplus,"(0.75, 1.5]",1221,0.048,40
+emi_to_lean_surplus,EMI / lean-month surplus,"(1.5, 3.0]",1432,0.083,34
+emi_to_lean_surplus,EMI / lean-month surplus,"(3.0, 6.0]",1769,0.088,34
+emi_to_lean_surplus,EMI / lean-month surplus,"(6.0, inf]",1298,0.117,30
+emi_to_avg_surplus,EMI / average monthly surplus,"(-inf, 0.4]",1217,0.039,48
+emi_to_avg_surplus,EMI / average monthly surplus,"(0.4, 0.55]",1436,0.065,38
+emi_to_avg_surplus,EMI / average monthly surplus,"(0.55, 0.75]",1500,0.08,34
+emi_to_avg_surplus,EMI / average monthly surplus,"(0.75, 1.0]",1124,0.075,36
+emi_to_avg_surplus,EMI / average monthly surplus,"(1.0, inf]",1404,0.125,25
+inflow_cv_12m,Income volatility (bank/UPI),"(-inf, 0.13]",906,0.053,40
+inflow_cv_12m,Income volatility (bank/UPI),"(0.13, 0.16]",928,0.08,35
+inflow_cv_12m,Income volatility (bank/UPI),"(0.16, 0.2]",1118,0.069,37
+inflow_cv_12m,Income volatility (bank/UPI),"(0.2, 0.3]",770,0.083,34
+inflow_cv_12m,Income volatility (bank/UPI),"(0.3, inf]",951,0.1,31
+inflow_cv_12m,Income volatility (bank/UPI),No digital footprint,2008,0.08,34
+lean_3m_inflow_ratio,Lean-season income ratio,"(-inf, 0.7]",1054,0.1,35
+lean_3m_inflow_ratio,Lean-season income ratio,"(0.7, 0.8]",832,0.085,35
+lean_3m_inflow_ratio,Lean-season income ratio,"(0.8, 0.85]",958,0.068,35
+lean_3m_inflow_ratio,Lean-season income ratio,"(0.85, 0.9]",1045,0.069,35
+lean_3m_inflow_ratio,Lean-season income ratio,"(0.9, inf]",784,0.057,35
+lean_3m_inflow_ratio,Lean-season income ratio,No digital footprint,2008,0.08,35
+bounce_rate_12m,Payment bounce rate,"(-inf, 0.025]",849,0.015,61
+bounce_rate_12m,Payment bounce rate,"(0.025, 0.04]",952,0.033,49
+bounce_rate_12m,Payment bounce rate,"(0.04, 0.06]",1049,0.046,44
+bounce_rate_12m,Payment bounce rate,"(0.06, 0.08]",958,0.098,31
+bounce_rate_12m,Payment bounce rate,"(0.08, inf]",865,0.199,18
+bounce_rate_12m,Payment bounce rate,No digital footprint,2008,0.08,34
+avg_eom_balance_months,Savings buffer (months),"(-inf, 0.25]",1084,0.097,32
+avg_eom_balance_months,Savings buffer (months),"(0.25, 0.4]",896,0.092,33
+avg_eom_balance_months,Savings buffer (months),"(0.4, 0.6]",886,0.076,35
+avg_eom_balance_months,Savings buffer (months),"(0.6, 1.0]",924,0.067,37
+avg_eom_balance_months,Savings buffer (months),"(1.0, inf]",883,0.048,41
+avg_eom_balance_months,Savings buffer (months),No digital footprint,2008,0.08,34
+utility_bill_ontime_rate,Electricity bills paid on time,"(-inf, 0.7]",897,0.168,25
+utility_bill_ontime_rate,Electricity bills paid on time,"(0.7, 0.82]",972,0.093,33
+utility_bill_ontime_rate,Electricity bills paid on time,"(0.82, 0.9]",1192,0.056,39
+utility_bill_ontime_rate,Electricity bills paid on time,"(0.9, 0.95]",1045,0.054,39
+utility_bill_ontime_rate,Electricity bills paid on time,"(0.95, inf]",850,0.029,46
+utility_bill_ontime_rate,Electricity bills paid on time,No utility data,1725,0.075,35
+mobile_recharge_regularity,Mobile recharge regularity,"(-inf, 0.7]",1376,0.137,29
+mobile_recharge_regularity,Mobile recharge regularity,"(0.7, 0.78]",1167,0.075,35
+mobile_recharge_regularity,Mobile recharge regularity,"(0.78, 0.84]",1303,0.074,35
+mobile_recharge_regularity,Mobile recharge regularity,"(0.84, 0.89]",1240,0.052,39
+mobile_recharge_regularity,Mobile recharge regularity,"(0.89, inf]",1273,0.041,41
+mobile_recharge_regularity,Mobile recharge regularity,No telecom data,322,0.093,33
+udhaar_ontime_rate,Udhaar Passport on-time rate,"(-inf, 0.65]",466,0.178,22
+udhaar_ontime_rate,Udhaar Passport on-time rate,"(0.65, 0.8]",507,0.118,29
+udhaar_ontime_rate,Udhaar Passport on-time rate,"(0.8, 0.9]",613,0.047,42
+udhaar_ontime_rate,Udhaar Passport on-time rate,"(0.9, 0.95]",477,0.027,49
+udhaar_ontime_rate,Udhaar Passport on-time rate,"(0.95, inf]",405,0.03,48
+udhaar_ontime_rate,Udhaar Passport on-time rate,No Udhaar Passport,4213,0.076,35
+shg_attendance_rate,SHG meeting attendance,"(-inf, 0.7]",344,0.128,32
+shg_attendance_rate,SHG meeting attendance,"(0.7, 0.8]",326,0.077,35
+shg_attendance_rate,SHG meeting attendance,"(0.8, 0.87]",350,0.074,35
+shg_attendance_rate,SHG meeting attendance,"(0.87, 0.93]",371,0.038,38
+shg_attendance_rate,SHG meeting attendance,"(0.93, inf]",316,0.022,40
+shg_attendance_rate,SHG meeting attendance,Not an SHG member,4974,0.081,35
+shg_savings_months,SHG savings (months),"(-inf, 0.25]",348,0.083,34
+shg_savings_months,SHG savings (months),"(0.25, 0.45]",375,0.091,33
+shg_savings_months,SHG savings (months),"(0.45, 0.7]",317,0.063,37
+shg_savings_months,SHG savings (months),"(0.7, 1.2]",333,0.048,39
+shg_savings_months,SHG savings (months),"(1.2, inf]",334,0.051,38
+shg_savings_months,SHG savings (months),Not an SHG member,4974,0.081,35
+drought_exposure,Rainfall / drought exposure,"Agri, drought but insured",15,0.067,31
+drought_exposure,Rainfall / drought exposure,"Agri, drought, uninsured",116,0.147,20
+drought_exposure,Rainfall / drought exposure,"Agri, normal monsoon",2759,0.091,31
+drought_exposure,Rainfall / drought exposure,Not agri-dependent,3791,0.066,38

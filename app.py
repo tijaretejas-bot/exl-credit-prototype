@@ -13,7 +13,8 @@ import streamlit as st
 import scoring as S
 
 st.set_page_config(page_title='Inclusive Credit Decisioning', page_icon='📊', layout='wide')
-D = os.path.join(os.path.dirname(__file__), 'data')
+_HERE = os.path.dirname(os.path.abspath(__file__))
+D = os.path.join(_HERE, 'data') if os.path.exists(os.path.join(_HERE, 'data', 'config.json')) else _HERE  # works whether data files sit in data/ or next to app.py
 
 INK, ACCENT, OLD, GOOD, AMBER_C, RED_C = '#1F2A44', '#1F6FB2', '#9AA5B1', '#2E8B57', '#E8A33D', '#C8463D'
 st.markdown(f"""

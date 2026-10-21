@@ -5,7 +5,8 @@ import os
 import numpy as np
 import pandas as pd
 
-D = os.path.join(os.path.dirname(__file__), 'data')
+_HERE = os.path.dirname(os.path.abspath(__file__))
+D = os.path.join(_HERE, 'data') if os.path.exists(os.path.join(_HERE, 'data', 'config.json')) else _HERE  # works whether data files sit in data/ or next to app.py
 CFG = json.load(open(os.path.join(D, 'config.json')))
 NEW = CFG['new']
 BASE = CFG['baseline']
